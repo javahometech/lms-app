@@ -31,6 +31,14 @@ public class StudentService {
     public Optional<Student> findStudentById(Long id) {
         return studentRepository.findStudentById(id);
     }
+    
+    public Optional<Student> findStudentByFirstName(String firstName) {
+		return studentRepository.findStudentByFirstName(firstName);
+	}
+    
+    public Optional<Student> findStudentByLastName(String lastName) {
+		return  studentRepository.findStudentByLastName(lastName);
+	}
 
     @Transactional
     public Student updateStudentById(Student student, Long id) {
@@ -69,4 +77,8 @@ public class StudentService {
     public void deleteStudentById(Long id) {
         studentRepository.deleteById(id);
     }
+
+	
+
+	
 }
