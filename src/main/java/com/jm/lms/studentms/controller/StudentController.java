@@ -55,7 +55,7 @@ public class StudentController {
     	List<Student> l=studentService.findByFirstName(name);
 		return l; 	
     }
-    //find by first name and last name
+    //find by first name and Last name
     @GetMapping("/findByFullName/{firstName}/{lastName}")
     public Student findStudentByFullName(@PathVariable(value = "firstName") String firstName,@PathVariable(value = "lastName") String lastName) {
 
