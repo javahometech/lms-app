@@ -69,4 +69,20 @@ public class StudentService {
     public void deleteStudentById(Long id) {
         studentRepository.deleteById(id);
     }
+    
+    
+    public List<Student> findByFirstName(String name){
+    	List<Student> l = studentRepository.findByFirstName(name);
+    	return l;
+    	
+    }
+    
+    public Student findByFullName(String firstName, String lastName) {
+        if (firstName != null && lastName != null) {
+            return studentRepository.findByFirstNameAndLastName(firstName, lastName);
+        }
+        return null; 
+    }
+   
+    
 }

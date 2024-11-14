@@ -5,6 +5,7 @@ import com.jm.lms.studentms.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
@@ -47,5 +48,21 @@ public class StudentController {
     public ResponseEntity<?> deleteStudentById(@PathVariable("studentId") Long id) {
         studentService.deleteStudentById(id);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    }
+    
+    @GetMapping("/findByName/{name}")
+    public List<Student> findStudentByFirstName(@PathVariable("name") String name) {
+    	List<Student> l=studentService.findByFirstName(name);
+		return l; 	
+    }
+    
+    @GetMapping("/findByFullName/{firstName}/{lastName}")
+    public Student findStudentByFullName(@PathVariable(value = "firstName") String firstName,@PathVariable(value = "lastName") String lastName) {
+
+        Student student = studentService.findByFullName(firstName, lastName);
+        if (student == null) {
+            return null;
+        }
+        return student;
     }
 }

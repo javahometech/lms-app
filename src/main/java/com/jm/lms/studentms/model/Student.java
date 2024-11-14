@@ -26,6 +26,8 @@ public class Student {
 
     @Column(name = "email", nullable = false)
     private String email;
+    
+    
 
     public Student() {
     }
