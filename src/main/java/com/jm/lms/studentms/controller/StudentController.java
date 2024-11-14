@@ -49,13 +49,13 @@ public class StudentController {
         studentService.deleteStudentById(id);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
-    
+    //find by first name and last name
     @GetMapping("/findByName/{name}")
     public List<Student> findStudentByFirstName(@PathVariable("name") String name) {
     	List<Student> l=studentService.findByFirstName(name);
 		return l; 	
     }
-    
+    //find by first name and last name
     @GetMapping("/findByFullName/{firstName}/{lastName}")
     public Student findStudentByFullName(@PathVariable(value = "firstName") String firstName,@PathVariable(value = "lastName") String lastName) {
 
