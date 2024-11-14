@@ -32,10 +32,18 @@ public class StudentController {
     }
 
     @GetMapping("/find/id/{studentId}")
-    public ResponseEntity<Optional<Student>> findStudentById(@PathVariable("studentId") Long id) {
+    public ResponseEntity<Optional<Student>>findStudentById(@PathVariable("studentId") Long id){
         Optional<Student> student = studentService.findStudentById(id);
         return ResponseEntity.ok(student);
     }
+  
+    
+    @GetMapping("/find/name/{firstName}")
+    public ResponseEntity<Optional<Student>>findStudentByFirstName(@PathVariable("firstName") String firstName) {
+        Optional<Student> student = studentService.findStudentByName(firstName);
+        return ResponseEntity.ok(student);
+    }
+    
 
     @PutMapping("/{studentId}")
     public ResponseEntity<Student> updateStudentById(@RequestBody Student student, @PathVariable("studentId") Long id) {
