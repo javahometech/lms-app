@@ -31,11 +31,17 @@ public class StudentController {
         return ResponseEntity.ok(students);
     }
 
-    @GetMapping("/find/id/{studentId}")
-    public ResponseEntity<Optional<Student>> findStudentById(@PathVariable("studentId") Long id) {
-        Optional<Student> student = studentService.findStudentById(id);
-        return ResponseEntity.ok(student);
+//    @GetMapping("/find/id/{studentId}")
+//    public ResponseEntity<Optional<Student>> findStudentById(@PathVariable("studentId") Long id) {
+//        Optional<Student> student = studentService.findStudentById(id);
+//        return ResponseEntity.ok(student);
+//    }
+    @GetMapping("/find/name/{studentFirstName}")
+    public ResponseEntity<Optional<Student>> findStudentByFirstName(@PathVariable("studentFirstName") String name){
+    	Optional<Student> student =studentService.findStudentByFirstName(name);
+    	return ResponseEntity.ok(student);
     }
+   
 
     @PutMapping("/{studentId}")
     public ResponseEntity<Student> updateStudentById(@RequestBody Student student, @PathVariable("studentId") Long id) {

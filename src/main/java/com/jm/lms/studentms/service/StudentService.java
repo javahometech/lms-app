@@ -69,4 +69,11 @@ public class StudentService {
     public void deleteStudentById(Long id) {
         studentRepository.deleteById(id);
     }
+
+	public Optional<Student> findStudentByFirstName(String name) {
+		// TODO Auto-generated method stub
+		return studentRepository.findStudentByFirstName(name);
+	}
+
+	
 }
