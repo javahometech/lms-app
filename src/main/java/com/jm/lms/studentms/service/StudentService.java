@@ -31,7 +31,11 @@ public class StudentService {
     public Optional<Student> findStudentById(Long id) {
         return studentRepository.findStudentById(id);
     }
-
+    
+    public Optional<Student> findStudentByName(String firstname){
+    	return studentRepository.findStudentByFirstName(firstname);
+    }
+ 
     @Transactional
     public Student updateStudentById(Student student, Long id) {
         Student updateStudent = new Student();

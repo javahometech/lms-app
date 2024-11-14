@@ -14,8 +14,7 @@ import java.util.Optional;
 public class StudentController {
 
     private final StudentService studentService;
-
-    public StudentController(StudentService studentService) {
+	public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
 
@@ -36,7 +35,13 @@ public class StudentController {
         Optional<Student> student = studentService.findStudentById(id);
         return ResponseEntity.ok(student);
     }
-
+    
+    @GetMapping("/find/name/{studentFirstname}")
+    public ResponseEntity<Optional<Student>> findStudentByName(@PathVariable("studentFirstname") String firstname) {
+		Optional<Student> student = studentService.findStudentByName(firstname);
+        return ResponseEntity.ok(student);
+    }   
+    
     @PutMapping("/{studentId}")
     public ResponseEntity<Student> updateStudentById(@RequestBody Student student, @PathVariable("studentId") Long id) {
         Student updated = studentService.updateStudentById(student, id);
