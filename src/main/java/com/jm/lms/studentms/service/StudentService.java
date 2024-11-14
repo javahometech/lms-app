@@ -35,6 +35,10 @@ public class StudentService {
     public Optional<Student> findStudentByfirstName(String firstName){
     	return studentRepository.findStudentByfirstName(firstName);
     }
+    
+    public Optional<Student> findStudentBylastName(String lastName){
+    	return studentRepository.findStudentBylastName(lastName);
+    }
 
     @Transactional
     public Student updateStudentById(Student student, Long id) {
