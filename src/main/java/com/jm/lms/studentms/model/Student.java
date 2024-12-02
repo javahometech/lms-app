@@ -6,7 +6,7 @@ import org.hibernate.annotations.GenericGenerator;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "students")
+//@Table(name = "students")
 public class Student {
 
     @Id
