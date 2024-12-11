@@ -1,13 +1,13 @@
 package com.jm.lms.studentms.model;
 
 import org.hibernate.annotations.GenericGenerator;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+
 
 @Entity
 @Table(name="coursedetails")
@@ -47,15 +47,13 @@ public class CourseDetails {
 	public void setCourseInstructor(String courseInstructor) {
 		this.courseInstructor = courseInstructor;
 	}
+	
 	public CourseDetails() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	@Override
 	public String toString() {
 		return "CourseDetails [id=" + id + ", courseName=" + courseName + ", courseDescription=" + courseDescription
 				+ ", courseInstructor=" + courseInstructor + "]";
 	}
-	
-
 }
