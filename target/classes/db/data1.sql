@@ -6,10 +6,10 @@ CREATE TABLE COURSEDETAILS (
 );
 
 INSERT INTO COURSEDETAILS(ID, COURSE_NAME, COURSE_DESCRIPTION, COURSE_INSTRUCTOR)
-VALUES (1, 'Web development', 'creating web pages', 'john doe');
+VALUES (1, 'Web development', 'Creating web pages', 'john doe');
 
 INSERT INTO COURSEDETAILS(ID, COURSE_NAME, COURSE_DESCRIPTION, COURSE_INSTRUCTOR)
-VALUES (2, 'development', 'creating web pages', 'doe');
+VALUES (2, 'Python Scripting', 'Writing Scripts', 'sam');
 
 INSERT INTO COURSEDETAILS(ID, COURSE_NAME, COURSE_DESCRIPTION, COURSE_INSTRUCTOR)
-VALUES (3, 'Web', 'creating web pages', 'john');
+VALUES (3, 'AWS', 'AWS is designed to allow application providers', 'vasanth');
