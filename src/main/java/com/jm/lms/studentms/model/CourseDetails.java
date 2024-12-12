@@ -8,7 +8,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
+@Data
 @Entity
 @Table(name="coursedetails")
 public class CourseDetails {
@@ -23,39 +26,4 @@ public class CourseDetails {
 	private String courseDescription;
 	@Column(name="course_instructor")
 	private String courseInstructor;
-	
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getCourseName() {
-		return courseName;
-	}
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
-	}
-	public String getCourseDescription() {
-		return courseDescription;
-	}
-	public void setCourseDescription(String courseDescription) {
-		this.courseDescription = courseDescription;
-	}
-	public String getCourseInstructor() {
-		return courseInstructor;
-	}
-	public void setCourseInstructor(String courseInstructor) {
-		this.courseInstructor = courseInstructor;
-	}
-	public CourseDetails() {
-		super();
-	
-	}
-	@Override
-	public String toString() {
-		return "CourseDetails [id=" + id + ", courseName=" + courseName + ", courseDescription=" + courseDescription
-				+ ", courseInstructor=" + courseInstructor + "]";
-	}
-
 }
