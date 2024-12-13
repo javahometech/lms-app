@@ -3,12 +3,17 @@ package com.jm.lms.studentms.model;
 import org.hibernate.annotations.GenericGenerator;
 
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
+@Data
 @Entity
 @Table(name = "ENROLLCOURSE")
 public class EnrollCourse {
@@ -33,65 +38,6 @@ public class EnrollCourse {
 		public Long getId() {
 			return id;
 		}
-
-		public void setId(Long id) {
-			this.id = id;
-		}
-
-		public String getCourseName() {
-			return courseName;
-		}
-
-		public void setCourseName(String courseName) {
-			this.courseName = courseName;
-		}
-
-		public String getCourseUserName() {
-			return courseUserName;
-		}
-
-		public void setCourseUserName(String courseUserName) {
-			this.courseUserName = courseUserName;
-		}
-
-		public String getCoursePassword() {
-			return coursePassword;
-		}
-
-		public void setCoursePassword(String coursePassword) {
-			this.coursePassword = coursePassword;
-		}
-
-		public String getCourseDuration() {
-			return courseDuration;
-		}
-
-		public void setCourseDuration(String courseDuration) {
-			this.courseDuration = courseDuration;
-		}
-
-		public EnrollCourse(Long id, String courseName, String courseUserName, String coursePassword,
-				String courseDuration) {
-			super();
-			this.id = id;
-			this.courseName = courseName;
-			this.courseUserName = courseUserName;
-			this.coursePassword = coursePassword;
-			this.courseDuration = courseDuration;
-		}
-
-		public EnrollCourse() {
-			super();
-		}
-
-		@Override
-		public String toString() {
-			return "EnrollCourse [id=" + id + ", courseName=" + courseName + ", courseUserName=" + courseUserName
-					+ ", coursePassword=" + coursePassword + ", courseDuration=" + courseDuration + "]";
-		}
-		
-		 
-
 
 	}
 
