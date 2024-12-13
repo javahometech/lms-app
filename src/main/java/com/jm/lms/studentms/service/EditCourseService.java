@@ -1,9 +1,12 @@
 package com.jm.lms.studentms.service;
 
 import org.springframework.stereotype.Service;
-
 import com.jm.lms.studentms.model.EditCourse;
 import com.jm.lms.studentms.repository.EditCourseRepository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Service
 
 public class EditCourseService {
@@ -14,15 +17,8 @@ public class EditCourseService {
 
 	}
 
-	
-//	public  EditCourse updateCourseById(EditCourse editcourse) {
-//		
-//		return editCourseRepository.save(editcourse) ;
-//	}
-
-
 	public static EditCourse updateCourseById(EditCourse course, Long id) {
-		
+		log.info("editCourseId" + id + ", Course: " + course);
 		return editCourseRepository.save(course);
 	}
 
