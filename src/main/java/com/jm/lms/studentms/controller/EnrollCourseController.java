@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jm.lms.studentms.model.EnrollCourse;
 import com.jm.lms.studentms.service.EnrollCourseService;
 
+
 @RestController
-@RequestMapping("api/v1/lms/Course")
+@RequestMapping("api/v1/lms/enroll")
 public class EnrollCourseController {
 	
 	private final EnrollCourseService enrollCourseService;
@@ -26,14 +27,10 @@ public class EnrollCourseController {
 	        EnrollCourse newEnroll = enrollCourseService.saveEnrollCourse(enrollcourse);
 	        return ResponseEntity.ok(newEnroll);
 	    }
-	 @GetMapping("/add")
+	 @GetMapping("/get")
 	    public ResponseEntity<List<EnrollCourse>> getAllEnrollCourse() {
 	        List<EnrollCourse> newEnroll = enrollCourseService.getAllEnrollCourse();
 	        return ResponseEntity.ok(newEnroll);
 	    }
 	    
-
-	
-	
-
 }
