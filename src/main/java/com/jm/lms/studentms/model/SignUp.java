@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "logins")
+@Table(name = "users")
 public class SignUp {
 	
 	    @Id
