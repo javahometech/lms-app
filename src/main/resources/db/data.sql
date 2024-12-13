@@ -1,4 +1,4 @@
 INSERT INTO TOPICS (ID, TOPIC_NAME, TOPIC_AUTHOR, TOPIC_DESCRIPTION, TOPIC_STATUS) VALUES
                      (1, 'SAVITRI', 'NAG ASWIN', 'It is a Biopic of Savitri', 'UPDATED');
 INSERT INTO TOPICS (ID, TOPIC_NAME, TOPIC_AUTHOR, TOPIC_DESCRIPTION, TOPIC_STATUS) VALUES
-                     (2, 'PUSHPA', 'SUKUMAR', 'It is about the smuggling about of Red Sandool wood', 'UPDATED');
+                     (2, 'JAVA', 'JAMES GOSLING', 'It is a programming language', 'UPDATED');

@@ -28,51 +28,5 @@ public class CreateTopic {
 	private String topicDescription;
 	@Column(name = "topic_status")
 	private String topicStatus;
-//	public Long getTopicId() {
-//		return topicId;
-//	}
-//	public void setTopicId(Long topicId) {
-//		this.topicId = topicId;
-//	}
-//	public String getTopicName() {
-//		return topicName;
-//	}
-//	public void setTopicName(String topicName) {
-//		this.topicName = topicName;
-//	}
-//	public String getTopicAuthor() {
-//		return topicAuthor;
-//	}
-//	public void setTopicAuthor(String topicAuthor) {
-//		this.topicAuthor = topicAuthor;
-//	}
-//	public String getTopicDescription() {
-//		return topicDescription;
-//	}
-//	public void setTopicDescription(String topicDescription) {
-//		this.topicDescription = topicDescription;
-//	}
-//	public String getTopicStatus() {
-//		return topicStatus;
-//	}
-//	public void setTopicStatus(String topicStatus) {
-//		this.topicStatus = topicStatus;
-//	}
-//	public CreateTopic(Long topicId, String topicName, String topicAuthor, String topicDescription,
-//			String topicStatus) {
-//		super();
-//		this.topicId = topicId;
-//		this.topicName = topicName;
-//		this.topicAuthor = topicAuthor;
-//		this.topicDescription = topicDescription;
-//		this.topicStatus = topicStatus;
-//	}
-//	public CreateTopic() {
-//		super();
-//	}
-//	@Override
-//	public String toString() {
-//		return "CreateTopic [topicId=" + topicId + ", topicName=" + topicName + ", topicAuthor=" + topicAuthor
-//				+ ", topicDescription=" + topicDescription + ", topicStatus=" + topicStatus + "]";
-//	}
+
 }
