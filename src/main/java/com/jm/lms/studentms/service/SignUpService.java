@@ -16,7 +16,7 @@ public class SignUpService {
     @Autowired
     private SignUpServiceRepository signUpServiceRepository;
 
-    public String saveRegister(SignUp signUp) {
+    public String signUp(SignUp signUp) {
     	
         if (signUpServiceRepository.existsByUsername(signUp.getUsername())) {
             return "Username already exists."; 
