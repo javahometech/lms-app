@@ -18,9 +18,9 @@ public class SignUpServiceController {
 @Autowired
 private SignUpService signUpService;
 
-@PostMapping("/add")
-public ResponseEntity<String> saveRegister(@RequestBody SignUp signup) {
-    String result = signUpService.saveRegister(signup); 
+@PostMapping("/adduser")
+public ResponseEntity<String> signUp(@RequestBody SignUp signup) {
+    String result = signUpService.signUp(signup); 
 
     if (result.equals("Username already exists.")) {
         return ResponseEntity.status(HttpStatus.OK).body(result);
