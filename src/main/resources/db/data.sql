@@ -26,8 +26,6 @@ VALUES (5, 'DATABASE MIGRATION', 'FRANK', 'CANCELLED');
 INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
 VALUES (6, 'ORDER SERVICE', 'PRASANNA', 'COMPLETED');
 
-
-
 INSERT INTO users (id, username, password, email)
 	VALUES (1, 'Nandini', 'nandhu123', 'nandininandu@gmail.com');
 
