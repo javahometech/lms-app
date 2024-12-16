@@ -12,6 +12,7 @@ INSERT INTO STUDENTS (id, first_name, last_name, date_of_birth, email) VALUES
 				 	 
 INSERT INTO STUDENTS (id, first_name, last_name, date_of_birth, email) VALUES 
 				 	 (5, 'Chelsey', 'Woods', '1999-06-12', 'woordsc@gmail.com');
+
 INSERT INTO TOPICS (ID, TOPIC_NAME, TOPIC_AUTHOR, TOPIC_DESCRIPTION, TOPIC_STATUS) VALUES
                      (1, 'SAVITRI', 'NAG ASWIN', 'It is a Biopic of Savitri', 'UPDATED');
 INSERT INTO TOPICS (ID, TOPIC_NAME, TOPIC_AUTHOR, TOPIC_DESCRIPTION, TOPIC_STATUS) VALUES
