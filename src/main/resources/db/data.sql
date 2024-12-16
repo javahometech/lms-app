@@ -1,3 +1,4 @@
+
 INSERT INTO STUDENTS (id, first_name, last_name, date_of_birth, email) VALUES 
 					 (1, 'Ashley', 'Miller', '1999-12-01', 'ashleymiller@gmail.com');
 
