@@ -10,7 +10,6 @@ public class LmsStudentManagementApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(LmsStudentManagementApplication.class, args);
-
+    	  SpringApplication.run(LmsStudentManagementApplication.class, args);
     }
 }
