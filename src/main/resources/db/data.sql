@@ -13,15 +13,12 @@ INSERT INTO STUDENTS (id, first_name, last_name, date_of_birth, email) VALUES
 INSERT INTO STUDENTS (id, first_name, last_name, date_of_birth, email) VALUES 
 				 	 (5, 'Chelsey', 'Woods', '1999-06-12', 'woordsc@gmail.com');
 
-INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
-VALUES (1, 'CODE REVIEW', 'ALICE', 'PENDING');
-INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
-VALUES (2, 'DESIGN MOCKUPS', 'BOB', 'COMPLETED');
-INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
-VALUES (3, 'WRITE DOCUMENTATION', 'CHARLIE', 'IN PROGRESS');
-INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
-VALUES (4, 'DEPLOY APPLICATION', 'DANA', 'ON HOLD');
-INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
-VALUES (5, 'DATABASE MIGRATION', 'FRANK', 'CANCELLED');
-INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
-VALUES (6, 'ORDER SERVICE', 'PRASANNA', 'COMPLETED');
+INSERT INTO ENROLLCOURSE(id, course_name, course_username, course_password, course_duration) VALUES 
+					 (1, 'aws','Harsha_sree','Harsha@143','3 months');
+
+INSERT INTO ENROLLCOURSE(id, course_name, course_username, course_password, course_duration) VALUES 
+				 	 (2, 'java', 'Reva_sree','Revasree@143','6 months');
+				 	 
+INSERT INTO ENROLLCOURSE(id, course_name, course_username, course_password, course_duration) VALUES 
+					 (3, 'python', 'Honey', 'Honey@143','4 months');
+

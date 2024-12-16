@@ -24,7 +24,7 @@ public class StudentController {
         Student newStudent = studentService.saveStudent(student);
         return ResponseEntity.ok(newStudent);
     }
-
+    
     @GetMapping()
     public ResponseEntity<List<Student>> getAllStudents() {
         List<Student> students = studentService.getAllStudents();
