@@ -52,6 +52,15 @@ VALUES (5, 'DATABASE MIGRATION', 'FRANK', 'CANCELLED');
 INSERT INTO TASKDETAILS (ID, TASK_NAME, CREATED_BY, TASK_STATUS)
 VALUES (6, 'ORDER SERVICE', 'PRASANNA', 'COMPLETED');
 
+INSERT INTO users (id, username, password, email)
+	VALUES (1, 'Nandini', 'nandhu123', 'nandininandu@gmail.com');
+
+INSERT INTO users (id, username, password, email) 
+	VALUES (2, 'Ramya', 'ramya456', 'athurramya654@gmail.com');
+
+INSERT INTO users (id, username, password, email) 
+	VALUES (3, 'Poojitha', 'pooji789', 'bollupoojitha@gmail.com');
+
 INSERT INTO COURSEDETAILS(ID, COURSE_NAME, COURSE_DESCRIPTION, COURSE_INSTRUCTOR)
 VALUES(1, 'Web developemnt', 'creating web pages', 'john doe');
 
