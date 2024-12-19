@@ -26,7 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 public class ViewCourseListController {
 	
 	@Autowired
-	private  CourseViewCourseListService service;
+	private ViewCourseListService service;
 	
 	@GetMapping
 	public ResponseEntity<List<Course>> viewAllcourses(){
