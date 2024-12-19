@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping("api/v1/course")
-public class CourseViewCourseListController {
+public class ViewCourseListController.java {
 	
 	@Autowired
 	private  CourseViewCourseListService service;
