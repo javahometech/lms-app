@@ -11,7 +11,7 @@ import com.jm.lms.studentms.repository.CourseViewCourseListRepository;
 import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Service
-public class CourseViewCourseListService {
+public class ViewCourseListService {
 	@Autowired
 	private CourseViewCourseListRepository repository;
 
