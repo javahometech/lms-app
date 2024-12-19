@@ -37,3 +37,13 @@ INSERT INTO COURSE(ID, COURSE_NAME, COURSE_DURATION, COURSE_FEE)
 VALUES(10, 'SAP', '5.MONTHS', 26000.00);
 INSERT INTO COURSE(ID, COURSE_NAME, COURSE_DURATION, COURSE_FEE) 
 VALUES(11, 'HTLL,CSS', '3.MONTHS', 8000.00);
+
+
+INSERT INTO ENROLLCOURSE(id, course_name, course_username, course_password, course_duration) VALUES 
+					 (1, 'aws','Harsha_sree','Harsha@143','3 months');
+
+INSERT INTO ENROLLCOURSE(id, course_name, course_username, course_password, course_duration) VALUES 
+				 	 (2, 'java', 'Reva_sree','Revasree@143','6 months');
+				 	 
+INSERT INTO ENROLLCOURSE(id, course_name, course_username, course_password, course_duration) VALUES 
+					 (3, 'python', 'Honey', 'Honey@143','4 months');
