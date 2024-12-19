@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.jm.lms.studentms.model.Course;
 @Repository
-public interface CourseViewCourseListRepository extends JpaRepository<Course, Long>{
+public interface ViewCourseListRepository.java extends JpaRepository<Course, Long>{
 	
 
 }
