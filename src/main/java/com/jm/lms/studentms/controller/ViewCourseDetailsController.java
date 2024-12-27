@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jm.lms.studentms.model.CourseDetails;
 import com.jm.lms.studentms.service.ViewCourseDetailsService;
 
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -36,14 +37,14 @@ public class ViewCourseDetailsController {
 	}
 	
 	@PostMapping("/add")
-	public ResponseEntity<CourseDetails> addCourseDetails(@RequestBody CourseDetails coursedetails){
+	public ResponseEntity<CourseDetails> addCourseDetails(@Valid @RequestBody CourseDetails coursedetails){
 		CourseDetails savedcourse=viewCourseDetailsService.addCourseDetails(coursedetails);
 		log.info("Adding new course details: {}", coursedetails);
 		return ResponseEntity.ok(savedcourse);
 	}
 	
 	@PutMapping("/update/{id}")
-	public CourseDetails updateCourseDetaildById(@PathVariable("id") Long id, @RequestBody CourseDetails coursedetails) {
+	public CourseDetails updateCourseDetaildById(@PathVariable("id") Long id, @Valid @RequestBody CourseDetails coursedetails) {
 		log.info("Updating course details for id: {}", id);
 		return viewCourseDetailsService.updateCourseDetailsById(id, coursedetails);
 	}
