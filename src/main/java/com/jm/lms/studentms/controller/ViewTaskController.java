@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.jm.lms.studentms.model.TaskDetails;
 import com.jm.lms.studentms.service.ViewTaskService;
-
-import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -29,7 +27,7 @@ public class ViewTaskController {
 	   }
 	   
 	   @GetMapping("/view")
-	    public List<TaskDetails> getAllTasks(@Valid TaskDetails taskDetails) {
+	    public List<TaskDetails> getAllTasks() {
 		   log.info("Entering getAllTasks method");
 	        List<TaskDetails> tasks = viewTaskService.getAllTasks();
 	        if (tasks.isEmpty()) {
@@ -52,6 +50,7 @@ public class ViewTaskController {
 	            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 	        }
 	   }
+	   
 	   
 	   @GetMapping("viewByName/{name}")
 	   public ResponseEntity<TaskDetails> findByTaskName(@PathVariable("name") String taskName){
